@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginBottom="90dp"
+
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:clipToPadding="false"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/back_image"
+            android:layout_toLeftOf="@+id/center"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_400sdp"/>
+        <Button
+            android:id="@+id/next_image"
+            android:layout_toRightOf="@+id/center"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_400sdp"/>
+
+        <Button
+            android:id="@+id/show_infor"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@+id/center"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/center"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_250sdp"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gradation_black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/back_Home"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tron1"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/nope_Home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tron1"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/close" />
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/like_Home"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tron1"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/favorite" />
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/tim_Home"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tron1"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tim" />
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/save_Home"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tron1"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/downarrows" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:background="@drawable/begin_batdau"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="create a new account"
+            android:textColor="@color/white"
+            android:id="@+id/bt_register"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:background="@drawable/begin_button_bg"
+            app:backgroundTint="@color/white" />
+        <Button
+            android:id="@+id/bt_login"
+            android:text="log in with phone number"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_150sdp"
+            android:background="@drawable/begin_button_bg"
+            app:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+</layout>
